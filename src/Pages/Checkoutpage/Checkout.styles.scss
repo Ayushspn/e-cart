@@ -4,9 +4,11 @@
 .cart-item{
     display: flex;
     flex-direction: column;
-    width: 79%;
+    width: 78%;
     margin-top: 10px;
     margin: 10px 6px 0 10px;
+    
+    
 
     .card{
         padding: 20px;
@@ -29,6 +31,14 @@
     display: flex;
     justify-content: space-between;
     max-width: 78rem;
+    .cart-details{
+        width: 22%;
+        @include mq($max-width){
+            width: 100%
+            
+        }
+
+    }
     .checkout-shop-now{
         padding: 10px 18px;
         text-decoration: none;
@@ -74,11 +84,28 @@
     }
 
     .card-details-chang-height{
-        width: 71% !important;
+        .priceDetails {
+            text-align: left;
+            color: #c7c3c3;
+            padding-left: 10px;
+            font-size: medium;
+            border-bottom: 1px solid #c7c3c3;
+            }
+        .cart-details-item{
+            display: inline-block;
+             width: 46%;
+             padding: 10px 0;
+        }
+
+        .container{
+            border-top: 1px solid #c7c3c3;
+            padding: 10px 0;
+        }
+        padding: 0 !important;
         margin-top: 64px;
         @include mq($max-width){
             margin-top: 20px;
-            width: 89% !important;
+            width: 100% !important;
         }
     }
     

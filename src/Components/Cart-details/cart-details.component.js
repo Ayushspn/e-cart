@@ -5,16 +5,16 @@ const CartDetails = ({ cartItemTotalDiscount, cartItemTotalPrice, cartItemCount 
     return (
         
             <div className ='card card-details-chang-height'>
-            <h3>Price Details</h3>
+            <h3 className ='priceDetails'>PRICE DETAILS</h3>
             <div>
-                <span>Price({cartItemCount} <span>Items</span>)</span> : <span>{cartItemTotalPrice}</span>
+                <span className ='cart-details-item'>Price({cartItemCount} <span>Items</span>)</span> : <span className ='cart-details-item'>{cartItemTotalPrice}</span>
             </div>
             <div>
-                <span>Discount</span> : <span>{cartItemTotalDiscount}</span>
+                <span className ='cart-details-item'>Discount</span> : <span className ='cart-details-item'>{cartItemTotalDiscount}</span>
             </div>
 
-            <div className='container '>
-                <b>Total Payable</b> : <span>{cartItemTotalPrice - (cartItemTotalDiscount)}</span>
+            <div className='container'>
+                <span className ='cart-details-item'> <b>Total Payable</b></span> : <span className ='cart-details-item'>{cartItemTotalPrice - (cartItemTotalDiscount)}</span>
             </div>
             </div>
         
