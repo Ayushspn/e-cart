@@ -1,0 +1,41 @@
+@import '../../../styles/mq.mixin.scss';
+@import '../../../styles/breakpoint.scss';
+
+.price-sort-container {
+    display : inline-block;
+    margin-left: 20px
+
+}
+.price-sort__button{
+    background: none;
+    border: none;
+    color: gray;
+
+}
+
+.active{
+    color: cornflowerblue;
+    border: none !important;
+    border-bottom: 1px solid cornflowerblue !important
+}
+
+.desctop-display__none{
+    display: none;
+}
+
+.apply_btn__position {
+    @include mq($max-width){
+        position: absolute;
+        left: 50%;
+     }
+}
+
+
+.mobile-display__none{
+    @include mq($max-width){
+        display: none;
+     }
+}
+
+
+

@@ -1,0 +1,125 @@
+@import '../../styles/mq.mixin.scss';
+@import '../../styles/breakpoint.scss';
+.header {
+  width: 98.3%;
+  background-color: hsl(0, 0%, 95%);
+  padding: 20px 10px;
+  justify-content: space-between;
+  background-color: #4368ea;
+  display: flex;
+  .disablingCartButton {
+    cursor:  context-menu;
+  }
+  .fa.fa-star{
+    color: #f8d11e;
+  }
+  .cartItem {
+    color: white;
+      background: red;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      position: absolute;
+      top: -9px;
+      font-size: 16px;
+      right: -8px;
+  }
+
+  .company-logo{
+    @include mq($max-width){
+      padding-left: 0;
+  }
+  }
+
+  .search-icon{
+    position: relative;
+    
+  }
+  .cart-icon{
+    // width: 7%;
+    // line-height: 20px;
+    @include mq($max-width){
+     // width: 20%;
+   }
+   .fa-shopping-cart{
+    @include mq($max-width){
+      font-size: 26px;
+   }
+   }
+  }
+  .search-cart-container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    
+  }
+  a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  
+    .mobile-logo{
+      display: none;
+      @include mq($max-width){
+        display: block;
+    }
+    }
+    .desktop-logo {
+      @include mq($max-width){
+        display: none;
+    }
+    }
+    .fa-shopping-cart{
+      font-size: 25px;
+    }
+  
+}
+
+// .cart-icon{
+//   width : 15%;
+//   display: inline-block;
+// }
+
+.cart-button{
+  font-size: 20px;
+  border: none;
+  background-color: #F1F1F1;
+    position: relative;
+    width: 100%;
+    margin-top: 3px;
+    padding-left: 10px;
+    background: transparent;
+    color: white;
+  &:hover{
+    cursor: pointer;
+  }
+  
+}
+
+.main-container{
+  max-width: 79rem;
+  margin: 0 auto;
+}
+  .mobile-display__none{
+    @include mq($max-width){
+      display: none;
+  }
+  
+  }

@@ -1,0 +1,39 @@
+
+
+input:focus{
+    box-shadow: none !important;
+}
+.search-icon{
+    .search-box{
+        border: 0px none !important;
+        background: transparent !important;
+        border-bottom: 0px solid white !important;
+        border-radius: 0 !important;
+        width: 0;
+        transition: width 1s ease-in-out ;
+        padding-bottom: 10px;
+        color: #fff;
+       &::-webkit-search-cancel-button{
+           display: none !important;
+       }
+    }
+    
+    
+    &:hover .search-box{
+        width :200px;
+       border-bottom: 1px solid white !important;
+    }
+    
+}
+
+.serach-button{
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    padding: 6.0px;
+    background-color: white;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+}

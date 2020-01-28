@@ -1,0 +1,93 @@
+@import '../../styles/mq.mixin.scss';
+@import '../../styles/breakpoint.scss';
+
+.main-container {
+    .filter-apply-btn{
+        width: 25%;
+        @include mq($max-width){
+            display: none;
+         }
+    }
+    .shop-list-filter{
+        display: flex;
+        justify-content: space-between;
+        @include mq($max-width){
+            max-width: 96%;
+            margin: 0 auto;
+         }
+    }
+    .shopping-list{
+        display: inline-block;
+        width: 70%;
+    }
+    .card-image-container{
+        min-height: 165px;
+    }
+}
+
+
+
+.homeContainer{
+    display : flex;
+}
+
+.filter-text{
+    text-align : 'left';
+    margin-top: -21px;
+    padding-left: 12px;
+    @include mq($max-width){
+        display: none;
+     }
+}
+
+.apply-btn-container{
+    text-align: center;
+}
+.apply-rng-btn{
+    border-radius: 16px;
+    border: none;
+    padding: 8px;
+    background:#4368ea;
+    color: white;
+}
+
+.desctop-display__none{
+    display: none;
+}
+
+.filter-sort-mobile{
+    @include mq($max-width){
+        min-height: 20px;
+        background-color: #4368ea;
+        max-width: 94%;
+        margin: 0 auto;
+     }
+}
+
+.filter-sort-icon{
+      
+    @include mq($max-width){
+        width: 50%;
+        display: inline-block;
+        text-align: center;
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
+     }
+    }
+
+    .desctop-display__none{
+        @include mq($max-width){
+            display: block;
+         }
+    }
+
+    .apply-rng-btn__modal{
+        @include mq($max-width){
+            width : 50%;
+        padding: 6px;
+    border: none;
+    background: transparent;
+         }
+       
+    }

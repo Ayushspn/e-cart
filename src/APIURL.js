@@ -1,0 +1,1 @@
+export const fetchCartItemsURL = 'https://api.myjson.com/bins/qzuzi';

@@ -1,0 +1,29 @@
+
+@import '../../styles/mq.mixin.scss';
+@import '../../styles/breakpoint.scss';
+
+.shopping-list-container{
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  @include mq($max-width){
+    width: 100%;
+ }
+ .card {
+  @include mq($max-width){
+    width: 34% !important;
+ }
+ button {
+  &:hover {
+    cursor: pointer;
+  }    
+}
+ }
+ .no-records{
+  padding: 17%;
+  padding-left: 30%;
+}
+}
+
+  
+  
