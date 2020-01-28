@@ -57,7 +57,7 @@
         }
     }
         @include mq($max-width){
-            width: 100%;
+             width: 96%;
             flex-direction: column;
         
     }
@@ -110,11 +110,13 @@
         margin: 0px 7px;
     @include mq($max-width){
         width: 40px;
-        margin: 9px 18px;
+        margin: 7px 18px;
     }
     }
 
     .remove-item{
+        font-size: 17px;
+        font-weight: bold;
         background-color: transparent;
         border: none;
         &:hover{
@@ -123,6 +125,7 @@
         @include mq($max-width){
             width: 100%;
             text-align: left;
+            padding-top: 10px;
         }
     }
 
@@ -136,8 +139,8 @@
     .cart-details-container{
         margin: 0 40px;
         @include mq($max-width){
-            text-align: center;
-            margin: 5px;
+            text-align: left;
+            margin: 0;
         } 
     }
 }
